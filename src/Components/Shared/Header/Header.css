@@ -1,0 +1,15 @@
+#sidebar a.active {
+  color: #ff444a;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+#cover-container{
+  background-image: url(https://i.ibb.co/1zJTz5V/bgimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  
+}

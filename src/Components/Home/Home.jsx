@@ -1,9 +1,10 @@
+import Cover from "../Cover/Cover";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home Page</h1>
+            <Cover></Cover>
         </div>
     );
 };
