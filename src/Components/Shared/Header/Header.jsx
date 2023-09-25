@@ -6,7 +6,7 @@ const Header = () => {
   const navData = (
     <>
       <li>
-        <NavLink to={"/home"}>Home</NavLink>
+        <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
         <NavLink to={"/donation"}>Donation</NavLink>
@@ -18,7 +18,7 @@ const Header = () => {
   );
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 max-w-7xl mx-auto">
         <div className="flex-1 h-9 md:h-16">
           <img className="h-9 md:h-16" src={logo1} alt="" />
         </div>

@@ -1,0 +1,28 @@
+.cover-container {
+    position: relative;
+    top: 0px;
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover-container::before {    
+    content: "";
+    background-image: url('https://i.ibb.co/1zJTz5V/bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+}
+.cover-body {
+    position: relative;
+    color: #0B0B0B;  
+    line-height: 0.9;
+    text-align: center;
+  }
