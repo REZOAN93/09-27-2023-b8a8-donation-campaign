@@ -1,9 +1,9 @@
 import "./Cover.css";
 const Cover = () => {
   return (
-    <div className="bg-center cover-container">
-      <div className="text-center cover-body">
-        <div className="space-y-16">
+    <div className="cover-body">
+      <div className="text-center p-20">
+        <div className="space-y-10">
           <div>
             <h1 className="mb-5 text-center text-5xl font-bold">
               I Grow By Helping People In Need

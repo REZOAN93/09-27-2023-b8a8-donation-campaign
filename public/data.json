@@ -104,7 +104,7 @@
     "donation_amount": 40,
     "description": "Gender equality is a fundamental human right, yet many women face discrimination and lack access to education and economic opportunities. The Empower Women for Gender Equality campaign supports initiatives that empower women through education, vocational training, and advocacy. Your donation will help women break free from societal constraints, become financially independent, and actively participate in decision-making processes. Join us in the fight for gender equality and the empowerment of women worldwide.",
     "font_color": "#c9393a",
-    "backgroundColor": "#c9393a26",
+    "backgroundColor": "#c9393a15",
     "btn_color": "#c9393a"
   },
   {
@@ -178,5 +178,16 @@
     "font_color": "#0052FF",
     "backgroundColor": "#0052FF26",
     "btn_color": "#0052ff"
+  },
+  {
+    "id": 16,
+    "category": "Human Rights",
+    "name": "Equality and Justice Advocacy",
+    "picture1": "https://i.ibb.co/1XmyKck/Gender-Equality.jpg",
+    "donation_amount": 40,
+    "description": "Equality and justice are fundamental principles of a just society, yet many individuals still face discrimination and injustice. The Equality and Justice Advocacy campaign supports organizations that work to advance civil rights, combat discrimination, and promote equality for all. Your donation will contribute to legal advocacy, awareness campaigns, and policy initiatives that aim to create a more just and equitable society. Join us in the fight for equal rights and justice for all.",
+    "font_color": "#c9393a",
+    "backgroundColor": "#c9393a15",
+    "btn_color": "#c9393a"
   }
 ]

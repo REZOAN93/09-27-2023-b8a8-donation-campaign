@@ -5,8 +5,8 @@
     background-size: cover;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    
 }
 .cover-container::before {    
     content: "";
@@ -23,6 +23,4 @@
 .cover-body {
     position: relative;
     color: #0B0B0B;  
-    line-height: 0.9;
-    text-align: center;
   }
