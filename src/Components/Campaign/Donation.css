@@ -1,0 +1,13 @@
+#img-box{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 200px;
+    width: 100%;
+    
+}
+#img-box img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 200px;
+    width: 100%;
+}

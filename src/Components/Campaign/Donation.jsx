@@ -1,17 +1,32 @@
 import PropTypes from "prop-types";
+import "./donation.css";
 
 const Donation = ({ data }) => {
-  const { id,category,name,picture1,font_color,background_color,btn_color} = data;
-  return <div>
-    <div className="card card-compact bg-base-100">
-    <figure style={{width:'312px',height:'194px'}}><img style={{width:'312px',height:'194px'}} src={picture1} alt="Shoes" /></figure>
-    <div className="">
-        <button>{category}</button>
-        <p>{name}</p>
-    </div>
-</div>
+  const { category, name, picture1, font_color, backgroundColor } = data;
+  console.log(backgroundColor);
 
-  </div>;
+  const textStyle = {
+    color: font_color,
+  };
+  const containerStyle = {
+    backgroundColor: backgroundColor,
+  };
+
+  return (
+    <div style={containerStyle} className="rounded-lg flex flex-col">
+      <figure id="img-box">
+        <img src={picture1} alt="Shoes" />
+      </figure>
+      <div className=" p-5 flex-grow space-y-2">
+        <button style={(containerStyle)} className="btn btn-sm font-medium text-sm border-none">
+           <span style={(textStyle)}>{category}</span>
+        </button>
+        <p style={textStyle} className=" text-xl font-bold">
+          {name}
+        </p>
+      </div>
+    </div>
+  );
 };
 
 Donation.propTypes = {
