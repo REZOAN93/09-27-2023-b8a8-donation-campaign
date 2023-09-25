@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
 import "./donation.css";
 
-const Donation = ({ data }) => {
-  const { category, name, picture1, font_color, backgroundColor } = data;
-  console.log(backgroundColor);
+const Donation = ({ data, handleDonation }) => {
+  const { id, category, name, picture1, font_color, backgroundColor } = data;
 
   const textStyle = {
     color: font_color,
@@ -13,13 +12,21 @@ const Donation = ({ data }) => {
   };
 
   return (
-    <div style={containerStyle} className="rounded-lg flex flex-col">
+    <div
+      onClick={() => handleDonation(id)}
+      style={containerStyle}
+      className="rounded-lg flex flex-col cardContainer"
+    >
       <figure id="img-box">
         <img src={picture1} alt="Shoes" />
       </figure>
       <div className=" p-5 flex-grow space-y-2">
-        <button style={(containerStyle)} className="btn btn-sm font-medium text-sm border-none">
-           <span style={(textStyle)}>{category}</span>
+        <button
+          style={containerStyle}
+          className="btn btn-sm font-medium text-sm border-none"
+          disabled
+        >
+          <span style={textStyle}>{category}</span>
         </button>
         <p style={textStyle} className=" text-xl font-bold">
           {name}
@@ -30,7 +37,8 @@ const Donation = ({ data }) => {
 };
 
 Donation.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
+  handleDonation: PropTypes.func,
 };
 
 export default Donation;
