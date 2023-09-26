@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getLocalStorageData } from "../../Utilities/LocalStorage";
 import DonatedDetails from "./DonatedDetails";
+import Header from "../Shared/Header/Header";
 
 const DonationData = () => {
   const allDonation = useLoaderData();
@@ -30,6 +31,8 @@ const DonationData = () => {
 
   return (
     <div>
+      <Header></Header>
+      <div>
       <div className=" grid grid-cols-2 max-w-7xl mx-auto my-8 gap-8">
         {donatedData.slice(0, dataLength).map((na) => (
           <DonatedDetails key={na.id} data={na}></DonatedDetails>
@@ -46,6 +49,7 @@ const DonationData = () => {
         >
           Show All
         </button>
+      </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { savedDonatedList } from "../../Utilities/LocalStorage";
 import "./Details.css";
+import Header from "../Shared/Header/Header";
 
 const Details = () => {
   const navigate=useNavigate()
@@ -28,7 +29,11 @@ const Details = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto my-2 pb-20 space-y-5">
+    <div>
+      <div>
+      <Header></Header>
+      </div>
+      <div className="max-w-7xl mx-auto my-2 pb-20 space-y-5">
       <div className="card">
        <div className="  relative">
         <figure className="w-full h-screen rounded-lg ">
@@ -41,6 +46,7 @@ const Details = () => {
       </div>
       <h2 className=" text-4xl font-bold">{name}</h2>
         <p className=" text-base text-justify text-gray-500">{description}</p>    
+    </div>
     </div>
   );
 };

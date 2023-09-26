@@ -22,7 +22,8 @@ const Header = () => {
   );
   return (
     <div>
-      <div className={`flex flex-col ${currentLocation==='/'&&'cover-container bg-center'}`}>
+      <div className={'flex flex-col'} >
+      {/* data  ${currentLocation==='/'&&'cover-container bg-center'} */}
         <div className="navbar max-w-7xl mx-auto flex justify-between cover-body">
           <div>
             <div className="h-9 md:h-16">
@@ -38,7 +39,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div>{location.pathname === "/"?<Cover></Cover>:''}</div>
+        {/* <div>{location.pathname === "/"?<Cover></Cover>:''}</div> */}
       </div>
     </div>
   );

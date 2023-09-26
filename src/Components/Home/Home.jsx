@@ -1,12 +1,55 @@
-import Campaign from "../Campaign/Campaign";
-
+import { useEffect, useState } from "react";
+import Donation from "../Campaign/Donation";
+import { useNavigate } from "react-router";
+import Cover from "../Cover/Cover";
+import Header from "../Shared/Header/Header";
 
 const Home = () => {
-    return (
-        <div>
-            <Campaign></Campaign>
+  const [donations, setDonations] = useState([]);
+  const [displayData, setDisplayData] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setDonations(data));
+  }, []);
+
+  const HandleDisplayData = (e) => {
+    e.preventDefault();
+    const category = e.target.category.value;
+    console.log(category);
+  };
+
+  const handleDonation = (id) => {
+    navigate(`/donationDetails/${id}`);
+  };
+
+  return (
+    <div>
+      <div>
+        <div className="relative">
+          <div className="">
+            <Cover HandleDisplayData={HandleDisplayData}></Cover>
+          </div>
+          <div className=" absolute w-full top-0">
+            <Header></Header>
+          </div>
         </div>
-    );
+        <div className="max-w-7xl mx-auto py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            {donations.map((na) => (
+              <Donation
+                key={na.id}
+                data={na}
+                handleDonation={handleDonation}
+              ></Donation>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Home;

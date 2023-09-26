@@ -1,4 +1,4 @@
-.cover-container {
+/* .cover-container {
     position: relative;
     top: 0px;
     height: 500px;
@@ -21,4 +21,10 @@
 .cover-body {
     position: relative;
     color: #0B0B0B;  
-  }
+  } */
+
+.imagebg{
+    opacity: 0.2;
+    width: 100%;
+    object-fit: cover;
+}
