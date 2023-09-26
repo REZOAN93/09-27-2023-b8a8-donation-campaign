@@ -8,6 +8,8 @@ export default {
       },
       colors: {
         colorBgBtn: '#FF444A',
+        colorBg:'rgba(11, 11, 11, 0.50)',
+        colorShowAll:'#009444'
       }
       
     },
