@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import "./Details.css";
 
