@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": "HEALTH",
+    "category": "Health",
     "name": "Clean Water for Children",
     "picture1": "https://i.ibb.co/TrLjSMH/Health.png",
     "picture2": "https://i.ibb.co/z7nBWBT/bf69b0786c15caeae95edc74821add1d.jpg",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "category": "EDUCATION",
+    "category": "Education",
     "name": "Good Education",
     "picture1": "https://i.ibb.co/4sd4dL2/Education.png",
     "picture2": "https://i.ibb.co/d7jpVvV/Rectangle-4288.png",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "category": "COMMUNITY",
+    "category": "Community",
     "name": "Used Clothing Drive",
     "picture1": "https://i.ibb.co/nw99dkH/Clothing.png",
     "picture2": "https://i.ibb.co/PWtf5LD/fb4761ab794b7c6a3bbe47db5aada389.jpg",
@@ -37,19 +37,19 @@
   },
   {
     "id": 4,
-    "category": "FOOD",
+    "category": "Food",
     "name": "Better Food for Everyone",
     "picture1": "https://i.ibb.co/BfVGHCX/Food.png",
     "picture2": "https://i.ibb.co/djTZyQf/a5a6654d792205c42250767f04885dec.jpg",
     "donation_amount": 75,
     "description": "Access to nutritious and affordable food is a fundamental human right. The Better Food for Everyone campaign is dedicated to improving food security in our community. Your donation will support initiatives like community gardens, food banks, and nutrition education programs that ensure everyone has access to healthy meals. By addressing food insecurity, we can enhance the well-being and quality of life for individuals and families. Join us in the fight against hunger and help create a future where everyone has access to better food options, leading to healthier, happier communities.",
     "font_color": "#F87147",
-    "backgroundColor": "#F8714726",
+    "backgroundColor": "#F8714715",
     "btn_color": "#F87147"
   },
   {
     "id": 5,
-    "category": "HEALTH",
+    "category": "Health",
     "name": "Medical Care for Vulnerable Populations",
     "picture1": "https://i.ibb.co/4F9rnyh/UNI316644-AR-0.jpg",
     "picture2": "https://i.ibb.co/4F9rnyh/UNI316644-AR-0.jpg",
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "category": "ENVIRONMENT",
+    "category": "Environment",
     "name": "Green Initiatives for a Sustainable Future",
     "picture1": "https://i.ibb.co/GF4JS3F/Getty-Images-1249384489-1280x720.jpg",
     "picture2": "https://i.ibb.co/GF4JS3F/Getty-Images-1249384489-1280x720.jpg",
@@ -73,7 +73,7 @@
   },
   {
     "id": 7,
-    "category": "ANIMAL WELFARE",
+    "category": "Animal Welfare",
     "name": "Rescue and Care for Homeless Animals",
     "picture1": "https://i.ibb.co/VLyPrx4/mattblog-5-ways-to-help-102218-main.jpg",
     "picture2": "https://i.ibb.co/VLyPrx4/mattblog-5-ways-to-help-102218-main.jpg",
@@ -85,7 +85,7 @@
   },
   {
     "id": 8,
-    "category": "CHILDREN",
+    "category": "Children",
     "name": "Support Orphaned Children's Education",
     "picture1": "https://i.ibb.co/zr3hZ9N/ph-30736-111927.jpg",
     "picture2": "https://i.ibb.co/zr3hZ9N/ph-30736-111927.jpg",
@@ -97,19 +97,19 @@
   },
   {
     "id": 9,
-    "category": "HUMAN RIGHTS",
+    "category": "Human Rights",
     "name": "Empower Women for Gender Equality",
     "picture1": "https://i.ibb.co/9NzLdMb/burundi.png",
     "picture2": "https://i.ibb.co/9NzLdMb/burundi.png",
     "donation_amount": 40,
     "description": "Gender equality is a fundamental human right, yet many women face discrimination and lack access to education and economic opportunities. The Empower Women for Gender Equality campaign supports initiatives that empower women through education, vocational training, and advocacy. Your donation will help women break free from societal constraints, become financially independent, and actively participate in decision-making processes. Join us in the fight for gender equality and the empowerment of women worldwide.",
-    "font_color": "#c9393a",
-    "backgroundColor": "#c9393a15",
-    "btn_color": "#c9393a"
+    "font_color": "#1c0ebd",
+    "backgroundColor": "#1c0ebd15",
+    "btn_color": "#1c0ebd"
   },
   {
     "id": 10,
-    "category": "COMMUNITY",
+    "category": "Community",
     "name": "Elderly Care and Companionship",
     "picture1": "https://i.ibb.co/xsyRV6Q/Elderly-Care-Companionship-1.jpg",
     "picture2": "https://i.ibb.co/xsyRV6Q/Elderly-Care-Companionship-1.jpg",
@@ -121,7 +121,7 @@
   },
   {
     "id": 11,
-    "category": "ENVIRONMENT",
+    "category": "Environment",
     "name": "Clean Energy for a Sustainable Planet",
     "picture1": "https://i.ibb.co/nmjfBHw/Untitled-1024-768px-5-1200x900.jpg",
     "picture2": "https://i.ibb.co/nmjfBHw/Untitled-1024-768px-5-1200x900.jpg",
@@ -133,7 +133,7 @@
   },
   {
     "id": 12,
-    "category": "COMMUNITY",
+    "category": "Community",
     "name": "Homelessness Prevention and Support",
     "picture1": "https://i.ibb.co/brM7fBp/Homelessness-Prevention.webp",
     "picture2": "https://i.ibb.co/brM7fBp/Homelessness-Prevention.webp",
@@ -145,7 +145,7 @@
   },
   {
     "id": 13,
-    "category": "EDUCATION",
+    "category": "Education",
     "name": "Access to Technology for Students",
     "picture1": "https://i.ibb.co/R6d2Pgq/Dec-4-How-to-Support-Student-without-Internet-Access-web-v2-1024x647.webp",
     "picture2": "https://i.ibb.co/R6d2Pgq/Dec-4-How-to-Support-Student-without-Internet-Access-web-v2-1024x647.webp",
@@ -157,7 +157,7 @@
   },
   {
     "id": 14,
-    "category": "ANIMAL WELFARE",
+    "category": "Animal Welfare",
     "name": "Wildlife Conservation and Habitat Protection",
     "picture1": "https://i.ibb.co/M2t80hx/fil1ixvhj-MID-295808.jpg",
     "picture2": "https://i.ibb.co/M2t80hx/fil1ixvhj-MID-295808.jpg",
@@ -169,7 +169,7 @@
   },
   {
     "id": 15,
-    "category": "HEALTH",
+    "category": "Health",
     "name": "Mental Health Support for All",
     "picture1": "https://i.ibb.co/h9DWdq2/Getty-Images-1185469291.jpg",
     "picture2": "https://i.ibb.co/h9DWdq2/Getty-Images-1185469291.jpg",
@@ -187,8 +187,8 @@
     "picture2": "https://i.ibb.co/1XmyKck/Gender-Equality.jpg",
     "donation_amount": 40,
     "description": "Equality and justice are fundamental principles of a just society, yet many individuals still face discrimination and injustice. The Equality and Justice Advocacy campaign supports organizations that work to advance civil rights, combat discrimination, and promote equality for all. Your donation will contribute to legal advocacy, awareness campaigns, and policy initiatives that aim to create a more just and equitable society. Join us in the fight for equal rights and justice for all.",
-    "font_color": "#c9393a",
-    "backgroundColor": "#c9393a15",
-    "btn_color": "#c9393a"
+    "font_color": "#1c0ebd",
+    "backgroundColor": "#1c0ebd15",
+    "btn_color": "#1c0ebd"
   }
 ]

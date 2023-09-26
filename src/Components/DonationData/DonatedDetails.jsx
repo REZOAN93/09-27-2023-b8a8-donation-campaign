@@ -1,7 +1,17 @@
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router";
 
 const DonatedDetails = ({ data }) => {
-  const { name, donation_amount, picture2, font_color,category,backgroundColor } = data;
+  const navigate=useNavigate()
+  const {
+    name,
+    id,
+    donation_amount,
+    picture2,
+    font_color,
+    category,
+    backgroundColor,
+  } = data;
 
   const textStyle = {
     color: font_color,
@@ -10,20 +20,18 @@ const DonatedDetails = ({ data }) => {
     backgroundColor: backgroundColor,
   };
   const btnStyle = {
-    backgroundColor:font_color,
+    backgroundColor: font_color,
   };
+  const handleViewDetails=()=>{
+    navigate(`/donationDetails/${id}`)
+  }
 
   return (
-    <div>
-      <div style={containerStyle} className="card card-side bg-base-100">
-        <figure className=" w-56 h-52">
-          <img
-          className=" w-56 h-52"
-            src={picture2}
-            alt="picture"
-          />
-        </figure>
-        <div className="p-5 space-y-2">
+    <div style={containerStyle} className="card card-side bg-base-100 flex flex-row">
+      <figure className=" w-5/12 h-full">
+        <img className=" w-full h-full" src={picture2} alt="picture" />
+      </figure>
+      <div className="p-5 w-7/12 space-y-2 flex-grow">
         <button
           style={containerStyle}
           className="btn btn-sm font-medium text-sm border-none"
@@ -31,14 +39,17 @@ const DonatedDetails = ({ data }) => {
         >
           <span style={textStyle}>{category}</span>
         </button>
-        <p className=" text-xl font-bold text-black">
-          {name}
-        </p>
+        <p className=" text-xl font-bold text-black">{name}</p>
         <p style={textStyle} className=" text-xl font-bold">
           ${donation_amount}.00
         </p>
-        <button style={btnStyle} className="btn border-none text-xl font-semibold text-white">View Details</button>
-        </div>
+        <button
+        onClick={handleViewDetails}
+          style={btnStyle}
+          className="btn border-none text-xl font-semibold text-white"
+        >
+          View Details
+        </button>
       </div>
     </div>
   );

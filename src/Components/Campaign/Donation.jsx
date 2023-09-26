@@ -23,7 +23,7 @@ const Donation = ({ data, handleDonation }) => {
       <div className=" p-5 flex-grow space-y-2">
         <button
           style={containerStyle}
-          className="btn btn-sm font-medium text-sm border-none"
+          className="px-3 py-1 font-medium rounded-md text-sm border-none"
           disabled
         >
           <span style={textStyle}>{category}</span>
