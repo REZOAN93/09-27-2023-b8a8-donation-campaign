@@ -9,6 +9,7 @@ export default {
       colors: {
         colorBgBtn: '#FF444A',
       }
+      
     },
   },
   plugins: [require("daisyui")],
