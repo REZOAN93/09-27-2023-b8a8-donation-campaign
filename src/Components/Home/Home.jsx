@@ -13,18 +13,22 @@ const Home = () => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
-        setDonations(data)
-        setDisplayData(data)
+        setDonations(data);
+        setDisplayData(data);
       });
   }, []);
 
   const HandleDisplayData = (e) => {
     e.preventDefault();
-    const form=e.target
+    const form = e.target;
     const category = e.target.category.value;
-    const specificData=donations.filter(na=>na.category.toLowerCase()==category.toLowerCase())
-    setDisplayData(specificData)
-    form.reset()
+    if (category) {
+      const specificData = donations.filter(
+        (na) => na.category.toLowerCase() == category.toLowerCase()
+      );
+      setDisplayData(specificData);
+      form.reset();
+    }
   };
 
   const handleDonation = (id) => {
