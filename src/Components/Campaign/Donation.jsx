@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./donation.css";
-import Header from "../Shared/Header/Header";
+
 
 const Donation = ({ data, handleDonation }) => {
   const { id, category, name, picture1, font_color, backgroundColor } = data;
@@ -13,8 +13,7 @@ const Donation = ({ data, handleDonation }) => {
   };
 
   return (
-    <div>
-      <div
+         <div
         onClick={() => handleDonation(id)}
         style={containerStyle}
         className="rounded-lg flex flex-col cardContainer"
@@ -30,12 +29,11 @@ const Donation = ({ data, handleDonation }) => {
           >
             <span style={textStyle}>{category}</span>
           </button>
-          <p style={textStyle} className=" text-xl font-bold">
+          <p style={textStyle} className=" text-base md:text-lg lg:text-xl xl:text-lg font-bold">
             {name}
           </p>
         </div>
       </div>
-    </div>
   );
 };
 

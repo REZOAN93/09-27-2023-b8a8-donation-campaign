@@ -34,7 +34,7 @@ const DonatedDetails = ({ data }) => {
       <div className="p-5 w-7/12 space-y-2 flex-grow">
         <button
           style={containerStyle}
-          className="btn btn-sm font-medium text-sm border-none"
+          className="px-3 py-2 rounded-lg font-medium text-sm border-none"
           disabled
         >
           <span style={textStyle}>{category}</span>
@@ -46,7 +46,7 @@ const DonatedDetails = ({ data }) => {
         <button
         onClick={handleViewDetails}
           style={btnStyle}
-          className="btn border-none text-xl font-semibold text-white"
+          className="btn border-none capitalize text-base md:text-xl font-semibold text-white"
         >
           View Details
         </button>

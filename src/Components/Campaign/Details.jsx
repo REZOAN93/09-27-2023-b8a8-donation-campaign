@@ -33,11 +33,11 @@ const Details = () => {
       <div>
       <Header></Header>
       </div>
-      <div className="max-w-7xl mx-auto my-2 pb-20 space-y-5">
+      <div className="max-w-7xl mx-auto my-2 pb-20 px-5 md:px-0 space-y-5">
       <div className="card">
        <div className="  relative">
-        <figure className="w-full h-screen rounded-lg ">
-          <img className="w-full h-screen rounded-lg" src={picture2} alt="Shoes" />
+        <figure className="w-full md:h-screen rounded-lg ">
+          <img className="w-full md:h-screen rounded-lg" src={picture2} alt="Shoes" />
         </figure>
        </div>
        <div className=" absolute inset-x-0 bottom-0 bg-colorBg py-8 px-3 rounded-bl-lg rounded-br-lg">

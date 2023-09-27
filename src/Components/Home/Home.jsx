@@ -12,13 +12,19 @@ const Home = () => {
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())
-      .then((data) => setDonations(data));
+      .then((data) => {
+        setDonations(data)
+        setDisplayData(data)
+      });
   }, []);
 
   const HandleDisplayData = (e) => {
     e.preventDefault();
+    const form=e.target
     const category = e.target.category.value;
-    console.log(category);
+    const specificData=donations.filter(na=>na.category.toLowerCase()==category.toLowerCase())
+    setDisplayData(specificData)
+    form.reset()
   };
 
   const handleDonation = (id) => {
@@ -37,8 +43,8 @@ const Home = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto py-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            {donations.map((na) => (
+          <div className="grid px-5 md:px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            {displayData.map((na) => (
               <Donation
                 key={na.id}
                 data={na}

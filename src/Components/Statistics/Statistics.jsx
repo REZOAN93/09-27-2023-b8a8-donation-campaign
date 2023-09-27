@@ -32,6 +32,7 @@ const Statistics = () => {
   return (
     <div>
       <Header></Header>
+      <div>
       <Chart
         chartType="PieChart"
         data={data}
@@ -39,6 +40,7 @@ const Statistics = () => {
         width={"100%"}
         height={"500px"}
       />
+      </div>
     </div>
   );
 };

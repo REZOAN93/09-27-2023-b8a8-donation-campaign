@@ -33,7 +33,7 @@ const DonationData = () => {
     <div>
       <Header></Header>
       <div>
-      <div className=" grid grid-cols-2 max-w-7xl mx-auto my-8 gap-8">
+      <div className=" grid px-5 md:px-0 lg:px-0 grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto my-8 gap-8">
         {donatedData.slice(0, dataLength).map((na) => (
           <DonatedDetails key={na.id} data={na}></DonatedDetails>
         ))}
@@ -45,9 +45,9 @@ const DonationData = () => {
       >
         <button
           onClick={handleDonatedBtn}
-          className="btn btn-submit bg-colorShowAll hover:bg-green-900 border-none text-xl font-semibold text-white"
+          className="btn btn-submit capitalize bg-colorShowAll hover:bg-green-900 border-none text-xl font-semibold text-white"
         >
-          Show All
+          See All
         </button>
       </div>
       </div>
