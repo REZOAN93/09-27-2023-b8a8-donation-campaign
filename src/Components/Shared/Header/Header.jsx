@@ -1,19 +1,22 @@
 import { NavLink, useLocation } from "react-router-dom";
 import logo1 from "../../../assets/Logo.png";
-
 import "./Header.css";
 
 const Header = () => {
+  const location=useLocation()
+  if (location.pathname==="statistics") {
+    window.location.reload()
+  }
 
   const navData = (
     <>
-      <li>
+      <li className="p-2">
         <NavLink to={"/"}>Home</NavLink>
-      </li>
-      <li>
+      </li >
+      <li className="p-2">
         <NavLink to={"/donation"}>Donation</NavLink>
       </li>
-      <li>
+      <li className="p-2"> 
         <NavLink to={"/statistics"}>Statistics</NavLink>
       </li>
     </>
@@ -25,7 +28,7 @@ const Header = () => {
               <img className="h-9 md:h-16 lg:h-16" src={logo1} alt="" />
             </div>
             <div className="end">
-              <ul id="sidebar" className=" px-1 lg:text-lg flex gap-3 md:gap-4 lg:gap-10">
+              <ul id="sidebar" className=" px-1 lg:text-lg font-bold flex gap-3 md:gap-7 lg:gap-10">
                 {navData}
               </ul>
             </div>
