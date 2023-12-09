@@ -1,3 +1,12 @@
+# Donation Campaign
+
+## Click here for the Live Link: [https://6513fcd912dcc50273285b92--adorable-tulumba-496dfa.netlify.app/](https://6513fcd912dcc50273285b92--adorable-tulumba-496dfa.netlify.app/)
+
+----------------------------------------------------------------
+
+- Technologies Used Front End: JavaScript, React, Vite, Tailwind CSS
+----------------------------------------------------------------
+## Project features
 I wanted to provide an overview of some key features I've incorporated into my website to enhance the user experience and promote transparency in our charitable donation platform:
 
 - Donation Page with Confirmation Message: Users are directed to a donation page when they select a donation card. Upon submitting a donate price btn, they receive a confirmation message through Sweet Alert. This feature ensures a seamless and reassuring donation process.
